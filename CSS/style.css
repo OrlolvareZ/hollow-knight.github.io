@@ -1,8 +1,11 @@
 
 /* Importing custom fonts */
 
-	@import url("../Media/Fonts/TrajanPro.ttf");
-	@import url("../Media/Fonts/Imperator.ttf");
+	@font-face {
+		font-family: "Trajan Pro";
+		src: url("../Media/Fonts/TrajanPro.ttf");
+		src: local("Trajan Pro"), url("../Media/Fonts/TrajanPro.ttf");
+	}
 
 /*
 	Body backgrounds
@@ -67,11 +70,11 @@
 */
 
 	font.f_title{
-		font-family: Trajan Pro;
+		font-family: "Trajan Pro";
 	}
 	
 	font.f_text{
-		font-family: Imperator;
+		font-family: "Times New Roman";
 	}
 	
 	/* p_text/center child */
