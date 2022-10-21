@@ -25,3 +25,11 @@ The assignment was given as follows:<br>
 <br>
 
 Include, for each document, include a button that takes the user to the next `HTML` file.
+
+<br>
+
+---
+
+<br>
+
+I chose Hollow Knight, one of my favorite videogames, as the theme for the website, hence the aesthetic.
