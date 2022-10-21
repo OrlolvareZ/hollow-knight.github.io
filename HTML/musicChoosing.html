@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<!-- This is the second page of the website. A music player is shown -->
+	<head>
+		<!-- Title will be set using cookies, to welcome the user according to their name -->
+		<title> A melody for a tragedy </title>
+		<!-- Linking stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<!-- Changing favicon (small icon that appears in the tab) -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Media/Icons/favicon.ico">
+		<!-- Loading JS file to use functions -->
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<!-- Set document's charset -->
+		<meta charset="UTF-8">
+	</head>
+	<body class="b_musicChoosing" onload="checkMusicSet()">
+		<div class="container"><div id="mainContainer" class="container_rows">
+				<div class="item">
+					<div class="item_big">
+						<div class="darkBox">
+							<!-- Title zone -->
+							<font class="f_title">
+								<p class="p_title">
+									A true hero needs an epic tune
+								</p>
+							</font>
+							<div class="line"></div>
+							<!-- Top paragraph -->
+							<font class="f_text">
+								<p id="description" class="p_text"><font class="center">
+									Choose a melody to begin your adventure
+								</font></p>
+							</font>
+							<div class="item">
+								<div class="item_full">
+									<!-- Christopher Larkin's picture. Later set class to "chrisLarkin" -->
+									<img id="chrisLarkin" class="hidden">
+								</div>
+								<div class="item_full">
+									<img class="frameBottom">
+								</div>
+							</div>
+							<!-- Music player zone -->
+							<div class="lightBox">
+								<div class="container"><div class="container_rows">
+									<!-- Musician zone -->
+									<div class="item" ><div class="item_small">
+										<img id="musician" class="musician_idle">
+									</div></div>
+									<!-- Song name zone -->
+									<div class="item" ><div class="item_big">
+										<font class="f_title">
+											<p id="songName"class="p_text"><font class="center"><font class="black">
+												<span id="songNameZone"><!-- Song name here --></span>
+											</font></font></p>
+										</font>
+									</div></div>
+									<!-- Music player -->
+									<div class="container"><div class="container_cols">
+										<!-- Song controls -->
+										<div class="item_med">
+											<audio id="actualSong" controls></audio>
+										</div>
+										<!-- Buttons to change song -->
+										<div class="item_small">
+											<div class="container_rows">
+												<div id="instructions" class="item"><div class="item_full">
+													<font class="f_title">
+														<font class="f_small"><font class="center"><font class="black">
+															Choose a different song:
+														</font></font></font>
+													</font>
+												</div></div>
+												<img class="leftButton" onclick="choosePrev()">
+												<img class="rightButton" onclick="chooseNext()">
+											</div>
+										</div>
+									</div></div>
+								</div></div>
+							</div>
+							<div class="line"></div>
+							<!-- Button zone -->
+							<div class="item">
+								<div class="item_small">
+									<button type="button" class="action" onclick="setVisible('middleButton', true)"> 
+										Care to know about the troubadour behind? </button>
+								</div>
+								<div class="item_small">
+									<!-- Hidden button -->
+									<button type="button" id="middleButton" class="action" 
+									onclick="displayChrisLarkin()" style="visibility:hidden;"> Touch here to free me </button>
+									<!-- Space to display message one pressed. Class later set to "f_title" -->
+									<font id="lookUpMsg" class="hidden">
+										<p class="p_text"><font class="center">
+											Look above to meet me
+										</font></p>
+									</font>
+								</div>
+								<div class="item_small">
+									<button type="button" class="action" onclick="loadPage('battle.html')"> Choose and continue </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Anchor to previous page -->
+				<div id="stag" class="darkBox">
+					<div class="d_stag">
+						<a href="index.html"> <img class="stag"> </a>
+					</div>
+				</div>
+		</div></div>
+	</body>
+	
+</html>

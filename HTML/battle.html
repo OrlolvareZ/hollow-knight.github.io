@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<!-- This is the third page of the website. A little choice game is run -->
+	<head>
+		<!-- Title will be set using cookies, to welcome the user according to their name -->
+		<title> Battleground </title>
+		<!-- Linking stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<!-- Changing favicon (small icon that appears in the tab) -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Media/Icons/favicon.ico">
+		<!-- Loading JS file to use functions -->
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<!-- Set document's charset -->
+		<meta charset="UTF-8">
+	</head>
+	<body class="b_battle">
+		<div class="container"><div id="mainContainer" class="container_rows">
+			<div class="item"><div class="item_full">
+				<!-- Title zone -->
+				<div class="item"><div class="item_big">
+					<font class="f_title">
+						<p class="p_title">
+							Somebody is approaching
+						</p>
+					</font>
+					<div class="line"></div>
+				</div></div>
+				<!-- Paragraphs below. Some will show via script -->
+				<div class="item"><div class="item_big">
+					<font class="f_text">
+						<p class="p_text">
+							Oh, look! It’s someone like you! Perhaps this adventure led you to find a true home.
+						</p>
+						<p class="hidden"> <!-- Elements shown later by class change via script -->
+							Perhaps... not so much like you...
+						</p>
+						<!-- Audio chosen in past page should be saved here -->
+						<div id="audioPlayer" class="hidden"><div class="item_med">
+								<div class="lightBox">
+								<font class="f_title">
+									<p id="songNameZone" class="p_text"></p>
+								</font>
+								<audio id="actualSong" controls></audio>
+							</div>
+						</div></div>
+						<p class="hidden">
+							It is evil. Will you face it?
+						</p>
+					</font>
+				</div></div>
+				<div class="item"><div class="item_big">
+					<img class="frameBottom">
+				</div></div>
+			</div></div>
+			<!-- Combat zone -->
+			<div class="item"><div class="item_full">
+				<!-- Combat scene shown here -->
+				<div class="combatBox" style="height:400px">
+					<div id="combatScene" class="container" ><div class="container_rows">
+						<!-- Characters -->
+						<div class="container"><div class="container_cols">
+							<div class="item_smallest">
+								<img id="player" class="hk_idle">
+							</div>
+							<div class="item_smallest">
+								<img id="enemy" class="nosk_noShow">
+							</div>
+						</div></div>
+						<!-- Area where victory/defeat video is played -->
+						<div id="outcomeVidZone" class="hidden"> <!-- Then sets class to "darkBox" -->
+							<video id="outcomeVid" class="outcome" controls></video>
+						</div>
+						<!-- Line -->
+						<div class="item"><div class="item_full">
+							<div class="line"></div>
+						</div></div>
+						<!-- Buttons -->
+						<div class="item">
+							<div class="item_smallest">
+								<button id="button_a" class="action" onclick="executeGameEvent(1)"> Get close </button>
+							</div>
+							<div class="item_smallest">
+								<!-- Class later set to action -->
+								<button id="button_b" class="hidden" onclick="executeGameEvent(5)"> Flight! </button>
+							</div>
+						</div>
+					</div></div>
+				</div>
+			</div></div>
+			<!-- Zone for message displayed upon game's end. Class later changed to "item" -->
+			<div id="result" class="hidden"><div class="item_big">
+				<div class="lightBox">
+					<font class="f_title">
+						<p class="p_text"></p>
+					</font>
+				</div>
+			</div></div>
+			<!-- Anchor to previous page. -->
+			<div id="stag" class="darkBox">
+				<div class="d_stag">
+					<a href="musicChoosing.html"> <img class="stag"> </a>
+				</div>
+			</div>
+		</div></div>
+	</body>
+	
+</html>

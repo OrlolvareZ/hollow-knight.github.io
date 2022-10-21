@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<!-- This is the first page of the website -->
+	<head>
+		<!-- Title will be set using cookies, to welcome the user according to their name -->
+		<title> Welcome </title>
+		<!-- Linking stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<!-- Changing favicon (small icon that appears in the tab) -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Media/Icons/favicon.ico">
+		<!-- Loading JS file to use functions -->
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<!-- Set document's charset -->
+		<meta charset="UTF-8">
+	</head>
+	<body class="b_index" onload="checkNameSet()">
+		<!-- Container for all divs used to lay out the page, exploiting flexible display functionality -->
+		<div class="container">
+			<!-- Apply main container a row distribution -->
+			<div id="mainContainer" class="container_rows">
+				<div class="item" >
+					<!-- Title zone -->
+					<div class="item_big">
+						<font class="f_title">
+							<p class="p_title">
+								Welcome to Hallownest
+							</p>
+						</font>
+						<div class="line"></div>
+					</div>
+					<!-- Image with text on the side -->
+					<div class="item_big">
+						<!-- Two columns. A container is set, and then its column or row distribution is given -->
+						<div class="container"><div class="container_cols">
+							<!-- Image and dialog in dark box -->
+							<div class="d_img">
+								<div class="darkBox">
+									<font class="f_text">
+										<!-- Paragraph is established as title/text, and then given color and alignment -->
+										<p class="p_text"><font class="center">
+												<span id="nameZone_1"> Hello<!-- If given, show name here -->&#33;</span>
+										</font></p>
+									</font>
+								</div>
+								<img src="../Media/Images/index/elderbug.png">
+								<div class="line"></div>
+							</div>
+							<!-- Introduction to Hallownest paragraph -->
+								<div class="d_text">
+									<div class="darkBox" justify-items="center">
+										<img class="frameTop">
+										<font class="f_text">
+											<p class="p_text">
+												Welcome<span id="nameZone_2"></span>. Ahead of you, lies the lost city of Hallownest,
+												a vast terrain full of mysteries where the videogame Hollow Knight takes place.<br>&nbsp;<br>
+												
+												Once a thriving kingdom in the middle of a wasteland, it has fallen into ruin in the wake
+												of the Infection. It is now a place of unknown treasures and secrets… but it may cost you your soul.
+												A steel-forged temper you require.<br>&nbsp;<br>
+												
+												Speaking of, our blacksmith friend may assist with the forging.
+												<span id="nameWarning">But, please do 
+													<!-- Button for setting name -->
+													<button id="setName_1" type="button" class="action" onclick="tellName()">
+														 Tell me your name 
+													</button>, for it is elemental to a warrior to be one with its nail.
+												</span>
+											</p>
+										</font>
+									<img class="frameBottom">
+								</div>
+							</div>
+						</div></div>
+					</div>
+					<!-- Zone for elements that appear after user giving name -->
+					<div id="forgeNailZone" class="hidden"> <!-- Then sets class to "item_big" -->
+						<!-- Area where video is played -->
+						<div id="forgeVidZone" class="hidden"> <!-- Then sets class to "darkBox" -->
+							<video id="forgeVid" class="forging" controls>
+								<source src='../Media/Video/nailForging.mp4'>
+							</video>
+						</div>
+						<!-- Area where nail (mystical blade) appears -->
+						<!-- Set class to "item_small" after video plays or name is given -->
+						<div id="nailZone" class="hidden">
+							<div class="container"><div class="container_rows">
+								<div class="item_full">
+									<font class="f_text">
+										<p class="p_text"><font class="center">
+											It's dangerous to go alone:
+										</font></p>
+									</font>
+								</div>
+								<div class="d_img">
+									<img class="nail">
+									<div class="line"></div>
+									<button class="action" onclick="exitWithAnim('../Media/Images/index/fall.gif',3500)"> Take this </button>
+								</div>
+							</div></div>
+						</div>
+					</div>
+				</div>
+				<!-- Anchor to page's top. Later set class to "darkBox" -->
+				<div id="stag" class="hidden">
+					<div class="d_stag">
+						<a href="#mainContainer"> <img class="stag"> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

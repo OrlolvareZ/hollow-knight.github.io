@@ -1,0 +1,403 @@
+
+/* Importing custom fonts */
+
+	@import url("../Media/Fonts/TrajanPro.ttf");
+	@import url("../Media/Fonts/Imperator.ttf");
+
+/*
+	Body backgrounds
+*/
+
+	body.b_index{
+		width: 100%;
+		background-image: url("../Media/Images/index/bg.png");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		transition: all 1.5s;
+	}
+	
+	body.b_musicChoosing{
+		width: 100%;
+		background-image: url("../Media/Images/musicChoosing/bg.png");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		transition: all 1.5s ease;
+	}
+	
+	body.b_battle{
+		width: 100%;
+		background-image: url("../Media/Images/battle/bg.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		transition: all 1.5s ease;
+	}
+	
+	body.b_enemyF{
+		width: 100%;
+		background-image: url("../Media/Images/enemyForeshadowing/bg.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		transition: all 1.5s ease;
+	}
+	
+/*
+	Paragraph styles
+*/
+
+	p.p_title{
+		font-size: 35px;
+		text-align: center;
+		color: white;
+		text-shadow: 0px 0px 20px rgb(113,0,141);
+	}
+	
+	/* Define a regular text format*/
+	p.p_text{
+		font-size: 20px;
+		text-align: justify;
+		color: white;
+	}
+	
+/*
+	Font styles
+*/
+
+	font.f_title{
+		font-family: Trajan Pro;
+	}
+	
+	font.f_text{
+		font-family: Imperator;
+	}
+	
+	/* p_text/center child */
+	font.black{
+		all: inherit;
+		color: black;
+	}
+
+	/* p_text/black child */
+	font.center{
+		all: inherit;
+		color: inherit;
+		text-align: center;
+	}
+	
+	font.f_small{
+		all: inherit;
+		font-size: 15px;
+	}
+
+/*
+	Button styles
+*/
+
+	button.action{
+		border-radius: 10%;
+		border-color: white;
+		background-color: rgb(0,0,0,0.5); /* Totally transparent */
+		color: white;
+		font-family: Trajan Pro;
+		padding: 5px 12px 5px 12px;
+		transition: all 0.2s ease;
+	}
+	
+	button.action:hover{
+	border-radius: 25%;
+		border-color: white;
+		background-color: white; /* Almost totally transparent black */
+		color: black;
+		cursor: pointer;
+	}
+	
+	button.confirmation{
+		border-radius: 10%;
+		background-color: white; /* Totally transparent */
+		color: black;
+		font-family: Trajan Pro;
+		padding: 10px 20px 10px 20px;
+		transition: all 0.2s ease;
+	}
+	
+	button.confirmation:hover{
+		border-radius: 25%;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+	}
+
+/*
+	Image loading
+*/
+
+	img.frameTop{
+		content: url("../Media/Images/frameTop.png");
+		height: 30px;
+	}
+
+	img.frameBottom{
+		content: url("../Media/Images/frameBottom.png");
+		height: 20px;
+	}
+	
+	img.stag{
+		content: url("../Media/Images/restingStag.gif");
+		height: 200px;
+		transition: all 1.25s ease;
+	}
+	
+	img.stag:hover{
+		content: url("../Media/Images/runningStag.gif");
+		border-radius: 50%;
+		/* Changes mouse cursos shape */
+		cursor: pointer;
+	}
+	
+	img.nail{
+		content: url("../Media/Images/index/nail.png");
+		height: 100%;
+		transition: all 0.25s ease;
+	}
+	
+	img.nail:hover{
+		box-shadow: 0px 0px 30px white;
+	}
+	
+	img.musician_play{
+		height: 150px;
+		content: url("../Media/Images/musicChoosing/brumm_play.gif");
+		border-radius: 50%;
+	}
+	
+	img.musician_idle{
+		height: 150px;
+		content: url("../Media/Images/musicChoosing/brumm_idle.jpg");
+		border-radius: 50%;
+	}
+	
+	img.chrisLarkin{
+		content: url("../Media/Images/musicChoosing/chrisLarkin.jpg");
+		height: 200px;
+		border-radius: 10%;
+		box-shadow: 0px 0px 30px white;
+	}
+	
+	img.leftButton{
+		content: url("../Media/Images/musicChoosing/leftButton.png");
+		height: 50px;
+		transition: all 0.25s ease;
+	}
+	
+	img.rightButton{
+		content: url("../Media/Images/musicChoosing/rightButton.png");
+		height: 50px;
+		transition: all 0.25s ease;
+	}
+	
+	img.leftButton:hover{
+		cursor: pointer;
+		box-shadow: 0px 0px 30px white;
+	}
+	
+	img.rightButton:hover{
+		cursor: pointer;
+		box-shadow: 0px 0px 30px white;
+	}
+	
+	img.hk_idle{
+		content: url("../Media/Images/battle/hk_idle.png");
+		height: 120px;
+	}
+	
+	img.nosk_noShow{
+		content: url("../Media/Images/battle/nosk_noShow.png");
+		height: 120px;
+	}
+	
+	img.hk_attack{
+		content: url("../Media/Images/battle/hk_attack.png");
+		height: 120px;
+	}
+	
+	img.nosk_show1{
+		content: url("../Media/Images/battle/nosk_show1.png");
+		height: 160px;
+	}
+	
+	img.nosk_show2{
+		content: url("../Media/Images/battle/nosk_show2.png");
+		height: 160px;
+	}
+
+	img.nosk_final{
+		content: url("../Media/Images/battle/nosk_final.png");
+		height: 220px;
+	}
+	
+	img.nosk_defeat{
+		content: url("../Media/Images/battle/nosk_defeat.png");
+		height: 300px;
+	}
+
+/*
+	Video configuration
+*/
+
+	video.forging{
+		height: 70%;
+	}
+	
+	video.outcome{
+		height: 300px;
+	}
+
+/*
+	Div. styles
+*/
+
+	div.container{
+		display: flex;
+		width: 100%;
+		/* Horizontal alignment */
+		justify-content: center;
+		justify-items: center;
+		/* Vertical alignment */
+		align-items: center;
+	}
+	
+	/* Container's child */
+	div.container_rows{
+		all: inherit;
+		flex-flow: row wrap;
+		/* Row gap, column gap*/
+		gap: 2% 0%;
+	}
+	
+	/* Container's child */
+	div.container_cols{
+		all: inherit;
+		gap: 0% 2%;
+	}
+	
+	div.item{
+		display: flex;
+		flex-flow: column wrap;
+		gap: 2%;
+		width: 100%;
+		/* Horizontal alignment */
+		justify-content: center;
+		justify-items: center;
+		/* Vertical alignment */
+		align-content: center;
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	
+	/* Item's child */
+	div.item_full{
+		all: inherit;
+		width: 100%;
+	}
+	
+	/* Item's child */
+	div.item_big{
+		all: inherit;
+		width: 70%;
+	}
+	
+	/* Item's child */
+	div.item_med{
+		all: inherit;
+		width: 50%;
+	}
+	
+	/* Item's child */
+	div.item_small{
+		all: inherit;
+		width: 35%;
+	}
+	
+	/* Item's child */
+	div.item_smallest{
+		all: inherit;
+		width: 20%;
+	}
+
+	div.d_img{
+		display: flex;
+		flex-flow: row wrap;
+		width: 32%;
+		/* Horizontal alignment */
+		justify-content: center;
+		/* Vertical alignment */
+		align-content: center;
+	}
+	
+	div.d_text{
+		display: flex;
+		width: 62%;
+	}
+	
+	/* Div used to display info with dark background */
+	div.darkBox{
+		display: flex;
+		width: 80%;
+		flex-wrap: wrap;
+		/* The linear-gradient() function takes a direction and several colors to swipe from one end of an item to the other */
+		background-image: linear-gradient(to bottom, rgb(0,0,0,0) 2%, rgb(0,0,0,0.7) 15%, rgb(0,0,0,0.7) 85%, rgb(0,0,0,0) 98%);
+		padding: 10px 10% 10px 10%;
+		justify-content: center;
+	}
+	
+	/* Div used to display info with bright background */
+	div.lightBox{
+		display: flex;
+		width: 80%;
+		flex-wrap: wrap;
+		background-image: linear-gradient(to bottom, rgb(255,255,255,0) 2%, rgb(255,255,255,0.7) 15%, rgb(255,255,255,0.7) 85%, rgb(255,255,255,0) 98%);
+		padding: 10px 10% 10px 10%;
+		justify-content: center;
+	}
+	
+	/* Div used to display combat minigame in battle.html */
+	div.combatBox{
+		display: flex;
+		width: 80%;
+		flex-wrap: wrap;
+		background-image: linear-gradient(to bottom, rgb(80,0,30,0) 0%, rgb(80,0,30,0.7) 5%, rgb(80,0,30,0.7) 95%, rgb(80,0,30,0) 100%);
+		padding: 0px 10% 0px 10%;
+		justify-content: center;
+		align-content: bottom;
+		align-items: flex-end;
+	}
+	
+	/* A line that acts as a parapraph divisor */
+	div.line{
+		display: flex;
+		width: 70%;
+		height: 3px;
+		background-image: linear-gradient(to right, rgb(255, 255, 255, 0) 2%, rgb(255, 255, 255, 1) 50%, rgb(255, 255, 255, 0) 98%);
+	}
+	
+	div.d_stag{
+		display: flex;
+		width: 100%;
+		background-image: url("../Media/Images/stag_bg.png");
+		background-size: 450px;
+		background-attachment: scroll;
+		background-repeat: repeat;
+		align-content: center;
+		justify-content: center;
+	}
+
+/*
+	Selectors to apply some properties to items
+*/
+
+	.hidden{
+		display:none;
+	}

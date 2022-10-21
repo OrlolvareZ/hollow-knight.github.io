@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<!-- This is the fourth page of the website. A table with enemy pictures is shown -->
+	<head>
+		<!-- Title will be set using cookies, to welcome the user according to their name -->
+		<title> The journey isn't over... </title>
+		<!-- Linking stylesheet -->
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+		<!-- Changing favicon (small icon that appears in the tab) -->
+		<link rel="shortcut icon" type="image/x-icon" href="../Media/Icons/favicon.ico">
+		<!-- Loading JS file to use functions -->
+		<script type="text/javascript" src="../JS/script.js"></script>
+		<!-- Set document's charset -->
+		<meta charset="UTF-8">
+	</head>
+	<body class="b_enemyF" onload="buildTable(2,4)">
+		<div class="container"><div id="mainContainer" class="container_rows">
+			<div class="item"><div class="item_big">
+				<!-- Title zone -->
+				<font class="f_title">
+					<p class="p_title">
+						This time, you rise
+					</p>
+				</font>
+				<div class="line"></div>
+			</div></div>
+			<!-- Box where paragraphs and pictures are displayed -->
+			<div class="item_big"><div class="darkBox">
+				<div class="item"><div class="item_full">
+					<img class="frameTop">
+				</div></div>
+				<div class="container"><div class="container_rows">
+					<!-- First paragraph -->
+					<div class="item"><div class="item_big">
+						<font class="f_text">
+							<p class="p_text">
+								…but Hallownest is deep and dark. To find victory, is to find the truth. And the truth... 
+								I do not wish you such dread.
+							</p>
+						</font>
+					</div></div>
+					<div class="item"><div id="tableZone" class="item_big">
+						<!-- Table with pictures here -->
+					</div></div>
+					<!-- Button and lower text -->
+					<div class="item"><div class="item_big">
+						<font class="f_text">
+							<p class="p_text"><font class="center">
+								<button id='toggler' class="confirmation" onclick="modifyFifthIndex()"> My nail will guide me </button>
+							</font></p>
+							<p class="hidden"><font class="center">
+								Threats in Hallownest will pose your doom. But, here, to thrive is to be doom itself.<br>
+								They are waiting for you, and their freedom as well.<br>
+								&nbsp;<br>
+								<font class="f_title">
+									Cleanse this world with the might of your nail.<br>
+								</font>
+								&nbsp;<br>
+								<font class="f_small">
+									You may ride our stag friend to enjoy this adventure once more...
+								</font>
+							</font></p>
+						</font>
+					</div></div>
+				</div></div>
+			</div></div>
+			<!-- Anchor to previous page. -->
+			<div id="stag" class="darkBox">
+				<div class="d_stag">
+					<a href="index.html"> <img class="stag"> </a>
+				</div>
+			</div>
+		</div></div>
+	</body>
+	
+</html>
